@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/PokeViews/app/src/main/res/layout/activity_grid_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/PokeViews/app/src/main/res/layout/activity_horizontal_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/PokeViews/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/PokeViews/app/src/main/res/layout/activity_vertical_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/PokeViews/app/src/main/res/layout/pokemon_grid_item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/PokeViews/app/src/main/res/layout/pokemon_item_list.xml" value="0.365625" />
       </map>
     </option>
   </component>
