@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import br.com.pokeviews.R
 import br.com.pokeviews.const.Layout
 import br.com.pokeviews.data.DataSource
-import br.com.pokeviews.model.Poke
 
 class PokeAdapter(
     private val context: Context,
@@ -26,11 +25,10 @@ class PokeAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokeViewHolder {
-        lateinit var adapterLayout: View
-        when (layout) {
-            Layout.GRID -> adapterLayout = LayoutInflater.from(parent.context)
+        val adapterLayout: View = when (layout) {
+            Layout.GRID -> LayoutInflater.from(parent.context)
                 .inflate(R.layout.pokemon_grid_item_list, parent, false)
-            else -> adapterLayout = LayoutInflater.from(parent.context)
+            else -> LayoutInflater.from(parent.context)
                 .inflate(R.layout.pokemon_item_list, parent, false)
         }
 

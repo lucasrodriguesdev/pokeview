@@ -1,9 +1,8 @@
 package br.com.pokeviews
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
+import androidx.appcompat.app.AppCompatActivity
 import br.com.pokeviews.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

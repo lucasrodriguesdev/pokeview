@@ -1,10 +1,9 @@
 package br.com.pokeviews
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import br.com.pokeviews.adapter.PokeAdapter
 import br.com.pokeviews.const.Layout
-import br.com.pokeviews.data.DataSource
 import br.com.pokeviews.databinding.ActivityVerticalListBinding
 
 class VerticalListActivity : AppCompatActivity() {
