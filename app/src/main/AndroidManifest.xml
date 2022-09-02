@@ -14,13 +14,13 @@
         android:theme="@style/Theme.PokeViews"
         tools:targetApi="31">
         <activity
-            android:name=".GridListActivity"
+            android:name=".ui.GridListActivity"
             android:exported="false" />
         <activity
-            android:name=".HorizontalListActivity"
+            android:name=".ui.HorizontalListActivity"
             android:exported="false" />
         <activity
-            android:name=".VerticalListActivity"
+            android:name=".ui.VerticalListActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.pokeviews.databinding.ActivityMainBinding
+import br.com.pokeviews.ui.GridListActivity
+import br.com.pokeviews.ui.HorizontalListActivity
+import br.com.pokeviews.ui.VerticalListActivity
 
 class MainActivity : AppCompatActivity() {
 

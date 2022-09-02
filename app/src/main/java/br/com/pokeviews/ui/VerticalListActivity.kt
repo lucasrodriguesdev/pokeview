@@ -1,4 +1,4 @@
-package br.com.pokeviews
+package br.com.pokeviews.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
