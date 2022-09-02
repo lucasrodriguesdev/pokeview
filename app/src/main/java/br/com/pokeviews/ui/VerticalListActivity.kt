@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import br.com.pokeviews.adapter.PokeAdapter
 import br.com.pokeviews.const.Layout
 import br.com.pokeviews.databinding.ActivityVerticalListBinding
+import br.com.pokeviews.model.PokemonResponse
 
 class VerticalListActivity : AppCompatActivity() {
 
@@ -14,7 +15,8 @@ class VerticalListActivity : AppCompatActivity() {
         binding = ActivityVerticalListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.rvVertical.adapter = PokeAdapter(applicationContext, Layout.VERTICAL)
+        binding.rvVertical.adapter = PokeAdapter(applicationContext, Layout.VERTICAL, PokemonResponse(
+            listOf()))
 
         // Specify fixed size to improve performance
         binding.rvVertical.setHasFixedSize(true)

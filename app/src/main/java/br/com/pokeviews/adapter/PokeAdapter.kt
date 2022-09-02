@@ -6,17 +6,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
 import br.com.pokeviews.R
 import br.com.pokeviews.const.Layout
 import br.com.pokeviews.data.DataSource
+import br.com.pokeviews.model.PokemonResponse
 
 class PokeAdapter(
     private val context: Context,
-    private val layout: Int
+    private val layout: Int,
+    private val listaPokemon: PokemonResponse
 ) : RecyclerView.Adapter<PokeAdapter.PokeViewHolder>() {
 
-    private val listaPokemon = DataSource.pokemons
+//    private val listaPokemon = DataSource.pokemons
 
     class PokeViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvNumer: TextView = view.findViewById(R.id.pokemon_number)
@@ -36,11 +39,11 @@ class PokeAdapter(
     }
 
     override fun onBindViewHolder(holder: PokeViewHolder, position: Int) {
-        val item = listaPokemon[position]
-        holder.imgPoke.setImageResource(item.imageResource)
-        holder.tvNumer.text = item.number
-        holder.tvName.text = item.name
+//        val item = listaPokemon[position]
+//        holder.imgPoke.setImageResource(item.imageResource)
+//        holder.tvNumer.text = item.number
+//        holder.tvName.text = item.results[0].name
     }
 
-    override fun getItemCount() = listaPokemon.size
+    override fun getItemCount() = listaPokemon.results.size
 }

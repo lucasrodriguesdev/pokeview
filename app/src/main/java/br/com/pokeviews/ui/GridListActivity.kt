@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import br.com.pokeviews.adapter.PokeAdapter
 import br.com.pokeviews.const.Layout
 import br.com.pokeviews.databinding.ActivityGridListBinding
-import br.com.pokeviews.ui.PokemonViewModel
 
 class GridListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGridListBinding
@@ -17,7 +16,8 @@ class GridListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityGridListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.rvGrid.adapter = PokeAdapter(applicationContext, Layout.GRID)
+        binding.rvGrid.adapter =
+            viewModel.pokemons.value?.let { PokeAdapter(applicationContext, Layout.GRID, it) }
 
         // Specify fixed size to improve performance
         binding.rvGrid.setHasFixedSize(true)

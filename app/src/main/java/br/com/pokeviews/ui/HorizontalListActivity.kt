@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import br.com.pokeviews.adapter.PokeAdapter
 import br.com.pokeviews.const.Layout
 import br.com.pokeviews.databinding.ActivityHorizontalListBinding
+import br.com.pokeviews.model.PokemonResponse
 
 
 class HorizontalListActivity : AppCompatActivity() {
@@ -13,8 +14,9 @@ class HorizontalListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHorizontalListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.rvHorizontal.adapter = PokeAdapter(applicationContext, Layout.HORIZONTAL)
-
+        binding.rvHorizontal.adapter = PokeAdapter(applicationContext, Layout.HORIZONTAL, PokemonResponse(
+            listOf())
+        )
         // Specify fixed size to improve performance
         binding.rvHorizontal.setHasFixedSize(true)
 
